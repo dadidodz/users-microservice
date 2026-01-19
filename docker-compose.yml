@@ -1,0 +1,16 @@
+services:
+  postgres:
+    container_name: sgbd
+    image: postgres:16
+    restart: always  # Redémarre la BDD automatiquement si le serveur reboot
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: microservice-user
+      POSTGRES_PASSWORD: microservice-password  # Mettez un mot de passe fort ici !
+      POSTGRES_DB: microservice-users-db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Persistance des données
+
+volumes:
+  postgres_data:
