@@ -3,7 +3,7 @@ import { AuthService } from './auth.service';
 import { UsersService } from '../users/users.service';
 import { JwtAuthGuard } from './jwt/jwt-auth.guard';
 import { JwtRefreshGuard } from './jwt/jwt-refresh.guard';
-import { GetUser } from './decorators/get-user.decorator';
+import { GetUser } from '../../../common/decorators/get-user.decorator';
 import { User } from '../users/entities/user.entity';
 import { CheckAvailabilityDto } from '../users/dto/check-availability.dto';
 import { CreateUserDto } from '../users/dto/create-user.dto';

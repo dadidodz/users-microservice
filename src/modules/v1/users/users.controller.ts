@@ -2,7 +2,7 @@ import { Controller, Delete, Get, HttpException, HttpStatus, UseGuards, Param, P
 import { UsersService } from './users.service';
 import { JwtAuthGuard } from '../auth/jwt/jwt-auth.guard';
 import { plainToInstance } from 'class-transformer';
-import { GetUser } from '../auth/decorators/get-user.decorator';
+import { GetUser } from '../../../common/decorators/get-user.decorator';
 import { User } from './entities/user.entity';
 import { UserResponseDto } from './dto/response-user.dto';
 import { CheckAvailabilityDto } from './dto/check-availability.dto';
