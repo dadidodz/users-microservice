@@ -37,10 +37,10 @@ export class AuthService {
         const filteredUser = plainToInstance(UserResponseDto, user);
 
         return {
-            message: 'User registered successfully',
+            // message: 'User registered successfully',
             access_token,
             refresh_token,
-            user: filteredUser,
+            // user: filteredUser,
         };
     }
 
@@ -56,10 +56,10 @@ export class AuthService {
         const filteredUser = plainToInstance(UserResponseDto, user);
 
         return {
-            message: 'Login successful',
+            // message: 'Login successful',
             access_token,
             refresh_token,
-            user: filteredUser,
+            // user: filteredUser,
         };
     }
 

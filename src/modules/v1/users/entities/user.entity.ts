@@ -29,10 +29,10 @@ export class User {
     @Column({ length: 255 })
     password: string;
 
-    @Column({ nullable: false })
+    @Column({ nullable: true })
     birthDate: Date;
 
-    @Column({ unique: true })
+    @Column({ nullable: true, unique: true })
     phoneNumber: string;
 
     @CreateDateColumn()
